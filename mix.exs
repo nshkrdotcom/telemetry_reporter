@@ -29,8 +29,8 @@ defmodule TelemetryReporter.MixProject do
 
   defp package do
     [
-      files: ["lib", "assets", "mix.exs", "README.md", "docs", "LICENSE*"],
-      licenses: ["Apache-2.0"],
+      files: ["lib", "mix.exs", "README.md", "CHANGELOG.md", "LICENSE*"],
+      licenses: ["MIT"],
       links: %{
         "GitHub" => "https://github.com/nshkrdotcom/telemetry_reporter"
       }
@@ -40,9 +40,22 @@ defmodule TelemetryReporter.MixProject do
   defp docs do
     [
       main: "readme",
-      extras: ["README.md", "docs/usage.md"],
-      logo: "assets/telemetry_reporter.svg",
-      assets: %{"assets" => "assets"}
+      extras: [
+        "README.md",
+        "CHANGELOG.md",
+        "LICENSE",
+        "docs/usage.md"
+      ],
+      groups_for_extras: [
+        "Getting Started": ["README.md", "docs/usage.md"],
+        About: ["CHANGELOG.md", "LICENSE"]
+      ],
+      groups_for_modules: [
+        Core: [TelemetryReporter],
+        Behaviours: [TelemetryReporter.Transport],
+        Adapters: [TelemetryReporter.TelemetryAdapter],
+        "Data Types": [TelemetryReporter.Event]
+      ]
     ]
   end
 

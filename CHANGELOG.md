@@ -1,7 +1,9 @@
 # Changelog
 
-## 0.1.0 - 2025-12-27
-### Added
-- Initial Pachka-based telemetry reporter with transport behaviour, sink, and event struct.
-- Telemetry adapter for forwarding `:telemetry` events.
-- Documentation and usage guide.
+All notable changes to this project will be documented in this file.
+
+This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.1.0](https://github.com/nshkrdotcom/telemetry_reporter/releases/tag/v0.1.0) - 2026-03-12
+
+Initial release.

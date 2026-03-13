@@ -90,3 +90,7 @@ TelemetryReporter emits telemetry events with prefix `[:telemetry_reporter]`:
 
 See `docs/usage.md` for advanced usage, encoder details, and retry backoff
 configuration.
+
+## License
+
+MIT — see [LICENSE](LICENSE) for details.
