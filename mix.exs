@@ -29,7 +29,7 @@ defmodule TelemetryReporter.MixProject do
 
   defp package do
     [
-      files: ["lib", "assets", "mix.exs", "README.md", "CHANGELOG.md", "LICENSE*"],
+      files: ["lib", "assets", "mix.exs", "README.md", "CHANGELOG.md", "LICENSE*", "docs"],
       licenses: ["MIT"],
       links: %{
         "GitHub" => "https://github.com/nshkrdotcom/telemetry_reporter"
